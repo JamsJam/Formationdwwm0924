@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2D2D2D;
+    gap:20px;
+}
+
+button, a{
+    padding-inline: 16px;
+    padding-block: 8px;
+
+    font-size: 16px;
+    color: #EFEFEF;
+
+    background-color: #845EEE ;
+
+    border: none ;
+    border-radius: 5px;
+
+    transition: background-color 250ms ease-in-out;
+    text-decoration: none;
+}
+
+button:hover,a:hover{
+    background-color: #3941F9;
+
+}
+button:focus, a:focus{
+    background-color: #F95454;
+
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <nav>
+            <a href="#selecteur" class="navLink">Selecteur</a>
+            <a href="#background" class="navLink">Background</a>
+            <a href="#" class="navLink">texte</a>
+            <a href="#" class="navLink"></a>
+        </nav>
+        
+        <h1>Le CSS</h1>
+        <section id="selecteur">
+            <!-- 
+            IL y a moyens de selectionner (cibler) un element avec du css.
+            - Grace au tag
+            - Grace a la classe
+            - Grace a l'id
+
+            id > class > tag > *
+            -->
+            <h2>Les selecteurs</h2>
+            <ul>
+                <li class="item">element n°1</li>
+                <li class="">element n°2</li>
+                <li class="">element n°3</li>
+                <li class="item">element n°4</li>
+            </ul>
+            <br>
+            <ul>
+                <li class="">element n°1</li>
+                <li class="" id="itemId">element n°2</li>
+                <li class="">element n°3</li>
+                <li class="item">element n°4</li>
+            </ul>
+            <br>
+            <ul>
+                <li class="item">element n°1</li>
+                <li class="">element n°2</li>
+                <li class="">element n°3</li>
+                <li class="">element n°4</li>
+            </ul>
+            <br>
+
+        </section>
+
+        <section id="background">
+            <h2>Background</h2>
+            <div class="bgCarre" id="divRouge"></div>
+            <div class="bgCarre" id="divTan"></div>
+            <div class="bgCarre" id="divNavy"></div>
+        </section>
+        <section id="texte">
+            <h2>textes</h2>
+            <h3>Alignement</h3>
+            <p id="txtAlignR">Je suis aligné a droite</p>
+            <p id="txtAlignC">Je suis aligné au centre</p>
+            <p id="txtAlignL">Je suis aligné aa gauche</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <h3>La taille des texte</h3>
+            <p >je suis le texte temoin</p>
+            <p class="txt-grand">Je suis le text Grand</p>
+            <p class="txt-petit">Je suis le texte petit</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </section>
+        <section id="div">
+            <h2>taille des divs</h2>
+
+            <div class="css-div"></div>
+            <div class="css-div" id="div-center">Carrée 200px</div>
+            <div class="css-div" id="div-marge">Carrée 300px</div>
+
+            <div class="css-div" id="div-full">Carrée 100vw</div>
+            <div class="css-div" id="div-half">Carrée 50vw</div>
+            
+
+
+        </section>
+        <section id="position">
+            <h2>Methode de positionnement</h2>
+            
+            <div class="position" id="position-abso-r"></div>
+            <div class="position" id="position-transform"></div>
+            <div class="position" id="position-"></div>
+            <div class="position" id="position-"></div>
+            <div class="position" id="position-"></div>
+            
+            <h3>Methode flex</h3>
+            <div class="flexContainer">
+                <div class="position"></div>
+                <div class="position"></div>
+                <div class="position"></div>
+                <div class="position"></div>
+            </div>
+
+        </section>
+        
+    </body>
+</html>

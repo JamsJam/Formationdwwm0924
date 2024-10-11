@@ -1,0 +1,48 @@
+@use "./../shared/" as *;
+
+#section-bouton{
+
+    min-height: 600px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: #2D2D2D;
+
+
+    .button{
+        padding-inline: 16px;
+        padding-block: 8px;
+        border: none;
+
+        font-size: 20px;
+
+        background-color: #21122e;
+        color: #DFDFDF;
+        font-weight: 600;
+
+
+        &--success{
+            @extend .button;
+            background-color: $color-success;
+        }
+
+        &--danger{
+            @extend .button;
+            // background-color: rgb(205, 57, 12);
+            background-color: $color-danger;
+        }
+
+        &--primary{
+            @extend .button;
+            background-color: $color-primary;
+        }
+
+        &--secondary{
+            @extend .button;
+            background-color: $color-secondary;
+        }
+    }
+}

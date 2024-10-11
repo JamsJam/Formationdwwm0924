@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/reset.scss","../scss/section/_button.scss","../scss/shared/_variable.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;;ACDJ;EAEI;EAEA;EACA;EACA;EACA;EAEA;;AAGA;EACI;EACA;EACA;EAEA;EAEA;EACA;EACA;;AAGA;EAEI,kBCzBK;;AD4BT;EAGI,kBChCI;;ADmCR;EAEI,kBCnCK;;ADsCT;EAEI,kBCvCO","file":"index.css"}

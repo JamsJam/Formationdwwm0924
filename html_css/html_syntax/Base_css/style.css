@@ -1,0 +1,29 @@
+h1{
+    background-color: tan;
+    display: inline;
+}
+
+
+
+.carreBleu{
+    background-color: blue;
+    margin-block: 2rem;
+    height: 100px;
+}
+
+.container{
+    border: 3px solid black;
+}
+
+.carreVert{
+    background-color: rgb(0, 255, 76);
+    margin-bottom: 4rem;
+    height: 100px;
+}
+
+.colorText{
+    color :green;
+    background-color: blue;
+    font-size: 5rem;
+    /* display:block; */
+}

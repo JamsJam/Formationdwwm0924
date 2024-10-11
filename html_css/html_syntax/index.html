@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Les titres</h1>
+    <p>
+        Les titre se declarent avec les balises suivante :
+    </p>
+    <ul>
+        <li>h1</li>
+        <li>h2</li>
+        <li>h3</li>
+        <li>h4</li>
+        <li>h5</li>
+        <li>h6</li>
+    </ul>
+<h2>Les paragraphe</h2>
+<p>
+    Les textes doivent majoritairement etre ecris dans un paragraphe
+    Déclarer un nouveau paragraphe retourne automatiquement a la ligne pour revenir a la ligne dans un paragraphe on peux utiliser la balise  "<\br>"
+</p>
+<p>
+    Pour modifier en partie le paragraphe, on va utiliser : <\span><\/\span>
+</p>
+
+<h3>Les listes</h3>
+<ul>
+    <li>Liste non-ordonée</li>
+    <li>Element n°1</li>
+    <li>Element n°2</li>
+    <li>Element n°3</li>
+    <li>Element n°4</li>
+</ul>
+
+<ol>
+    <li>Liste Ordonée</li>
+    <li>Element n°1</li>
+    <li>Element n°2</li>
+    <li>Element n°3</li>
+    <li>Element n°4</li>
+</ol>
+
+ul>(li>strong{liste imbriqué})+(li>(li>strong{Liste non ordonée})+ul>li*4{element n°$})+(li>(li>strong{Liste ordonée})+ol>li*4{element n°$})
+
+<ul>
+    <li><strong>liste imbriqué</strong></li>
+    <li>
+        <li><strong>Liste non ordonée</strong></li>
+        <li>
+            <ul>
+                <li>element n°1</li>
+                <li>element n°2</li>
+                <li>element n°3</li>
+                <li>element n°4</li>
+            </ul>
+        </li>
+    </li>
+    <li>
+        <li><strong>Liste ordonée</strong></li>
+        <li>
+            <ol>
+                <li>element n°1</li>
+                <li>element n°2</li>
+                <li>element n°3</li>
+                <li>element n°4</li>
+            </ol>
+        </li>
+    </li>
+</ul>
+<p>
+    Le l'enfant directe d'un ul ou d'un ol est OBLIGATOIREMENT un li
+</p>
+
+<h4>Les images</h4>
+
+<img src="https://picsum.photos/200" alt="Photo aleatoire" title="JE suis une image">
+
+<p>
+    scr sert a definir la rouce de l'image <br>
+    alt est un texte alternatif qui s'affichera si l'image n'est pas chargé <br>
+    title est une description de l'image qui s'affichera a l'hover.
+</p>
+
+
+<h5>Les liens</h5>
+
+<a href="https://google.com" target="_blank">Lien vers Google</a>
+
+<p>
+    La balise a permet de rediriger vers un lien externe ou interne au clic. <br>
+    Tout le contenu a l'interoeure de la balise est clicable
+</p>
+
+<a href="https://google.com" target="_blank">
+    <img src="https://picsum.photos/200" alt="Photo aleatoire" title="JE suis une image">
+</a>
+
+
+<h6>les formulaire</h6>
+
+<p>Les formulaire servent a recuperer des données via l'utilisateur</p>
+
+<form action=""></form>
+
+<p>un formulaire est constué d'input</p>
+
+<input type="text" name="" id="">
+<textarea name="" id=""></textarea>
+<fieldset>
+    <input type="radio" name="" id="">
+    <input type="radio" name="" id="">
+    <input type="radio" name="" id="">
+</fieldset>
+
+    <input type="checkbox" name="" id="">
+    <input type="checkbox" name="" id="">
+    <input type="checkbox" name="" id="">
+
+    <input type="date" name="" id="">
+    <input type="datetime-local" name="" id="">
+
+    <select name="" id="">
+        <option value="">choix n°1</option>
+        <option value="">choix n°2</option>
+        <option value="">choix n°3</option>
+        <option value="">choix n°4</option>
+        <option value="">choix n°5</option>
+        <option value="">choix n°6</option>
+        <option value="">choix n°7</option>
+        <option value="">choix n°8</option>
+        <option value="">choix n°9</option>
+        <option value="">choix n°10</option>
+    </select>
+
+    <input type="range" name="" id="">
+    <input type="color" name="" id="">
+
+    <input type="submit" value="Validé">
+    <input type="reset" value="Reset">
+
+    <h1>Les boutons</h1>
+
+    <button type="button">Button</button>
+    <button disabled="disabled">Button</button>
+    <button type="reset">Button</button>
+    <button type="submit">Button</button>
+
+    <h2>Les tables</h2>
+
+    <table>
+        <thead>
+            <th>Titre</th>
+            <th>Titre</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <tr>
+            <th>titre</th>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+        <tr>
+            <th>titre</th>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+        <tr>
+            <th>titre</th>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+        <tr>
+            <th>titre</th>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+    </table>
+
+    <h3>
+        Les container
+    </h3>
+
+    <p>
+        Permet de definir un espace.
+    </p>
+    
+    <html></html>
+    <body>
+    </body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <section></section>
+    <article></article>
+    <aside></aside>
+    <div></div>
+    <span></span>    
+
+
+    
+</body>
+</html>

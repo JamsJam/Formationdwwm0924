@@ -1,0 +1,228 @@
+/*? Selecteur universel */
+*{
+    /*? reset */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+section:nth-child(2n){
+    background-color: bisque;
+}
+/* Selectionne TOUT les li */
+
+#selecteur li{
+    font-weight: 700;
+}
+
+/* Selectionne les elements de classe item  */
+.item{
+    color:brown;
+}
+
+#itemId{
+    font-weight: 400;
+}
+
+
+/* Les backgrounds */
+
+.bgCarre{
+    height: 100px;
+    /* margin-block: 3rem; */
+    /* margin-inline: 1rem; */
+    margin: 3rem 1rem;
+    border: 3px black solid;
+}
+
+#divRouge{
+    background-color: brown;
+}
+
+#divTan{
+    background: linear-gradient(90deg, red, tan);
+}
+
+#divNavy{
+    background-image: url("https://picsum.photos/500");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#txtAlignR{
+    text-align: right;
+}
+#txtAlignC{
+    text-align: center;
+}
+#txtAlignL{
+    text-align: left;
+}
+
+
+.txt-grand{
+    font-size: 179px;
+    color: blueviolet;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.txt-petit{
+    font-size: 9px;
+
+}
+
+.css-div{
+    background-color: navy;
+    width: 200px;
+    height: 200px;
+    margin-block: 2rem;
+    ;
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#div-center{
+    margin-inline: auto
+}
+
+#div-marge{
+    margin-inline-start: 100px;
+    height: unset;
+    width: 300px;
+    
+    aspect-ratio: 1/1;
+}
+
+#div-full{
+    width: 100vw;
+}
+
+#div-half{
+    width: 50vw;
+    margin-inline: auto
+}
+
+#position{
+    position: relative;
+    min-height: 100vh;
+    background-color: moccasin;
+    /* left : 50%; */
+}
+
+.position{
+    width: 100px;
+    aspect-ratio: 1/1;
+    background-color: navy;
+    margin-block: 1rem;
+
+    
+    
+}
+#position-abso-r{
+    position:absolute;
+    top:0;
+    right:0
+}
+#position-transform{
+    
+    transform: translateX(100px) rotate(45deg) ;
+}
+
+.flexContainer{
+    width: 100%;
+    display:flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+
+
+
+    
+
+
+
+
+
+
+}
+
+/* :hover - Cible un élément lorsqu'il est survolé par la souris */
+a:hover {
+    color: red; /* Le lien devient rouge quand il est survolé */
+  }
+  
+  /* :active - Cible un élément lorsqu'il est activé (au moment du clic) */
+  button:active {
+    background-color: green; /* Le bouton devient vert lorsqu'il est cliqué */
+  }
+  
+  /* :focus - Cible un élément qui a le focus, par exemple lorsqu'on clique sur un champ de formulaire */
+  input:focus {
+    border: 2px solid blue; /* L'input a une bordure bleue lorsqu'il reçoit le focus */
+  }
+  
+  /* :nth-child() - Cible un enfant spécifique dans une liste en fonction de son numéro */
+  li:nth-child(2) {
+    color: blue; /* Le deuxième élément <li> aura une couleur bleue */
+  }
+  
+  /* :first-child - Cible le premier enfant d'un élément parent */
+  p:first-child {
+    font-weight: bold; /* Le premier paragraphe sera en gras */
+  }
+  
+  /* :last-child - Cible le dernier enfant d'un élément parent */
+  p:last-child {
+    font-style: italic; /* Le dernier paragraphe sera en italique */
+  }
+  
+  /* :checked - Cible les éléments cochés, comme les cases à cocher ou les boutons radio */
+  input:checked {
+    background-color: yellow; /* L'élément aura un fond jaune s'il est coché */
+  }
+  
+  /* :disabled - Cible les éléments désactivés, comme les champs de formulaire */
+  input:disabled {
+    background-color: lightgray; /* Les champs désactivés auront un fond gris clair */
+  }
+  
+
+  /* ::before - Insère un contenu avant l'élément ciblé */
+h1::before {
+    content: "→ "; /* Ajoute une flèche avant le texte du titre */
+    color: gray;
+  }
+  
+  /* ::after - Insère un contenu après l'élément ciblé */
+  h1::after {
+    content: " ←"; /* Ajoute une flèche après le texte du titre */
+    color: gray;
+  }
+  
+  /* ::first-letter - Cible la première lettre d'un élément */
+  p::first-letter {
+    font-size: 2em; /* Agrandit la première lettre du paragraphe */
+    color: red; /* La première lettre sera rouge */
+  }
+  
+  /* ::first-line - Cible la première ligne d'un élément */
+  p::first-line {
+    font-weight: bold; /* La première ligne du paragraphe sera en gras */
+  }
+  
+  /* ::selection - Cible le texte sélectionné par l'utilisateur */
+  ::selection {
+    background-color: yellow; /* Le fond du texte sélectionné sera jaune */
+    color: black; /* Le texte sélectionné sera noir */
+  }
+  

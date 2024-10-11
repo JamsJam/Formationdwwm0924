@@ -1,0 +1,48 @@
+*{
+    margin:0;
+
+    padding:0;
+
+        box-sizing: border-box;
+}
+
+.logo{
+    width: 100px;
+}
+
+.navigation{
+    display:flex;
+    align-items:center;
+    justify-content : flex-start;
+    gap:20px
+
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap: 25px
+
+}
+
+nav a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+header{
+    height: calc(2/3 * 100vh);
+    background: url("./Image/imgsection1.jpg")
+}
+
+.title h1{
+    font-size: 128px;
+
+}
+
+.title h2{
+    font-size: 48px;
+}
+

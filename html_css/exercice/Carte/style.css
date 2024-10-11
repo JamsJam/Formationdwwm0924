@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2D2D2D;
+}
+
+.carte__container{
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 16px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 12px;
+    
+    background-color: #FAFAFA;
+
+    transition: 
+        transform 500ms ease,
+        background-color 500ms ease
+    ;
+}
+
+.carte__img{
+    min-height: 180px;
+    /* width: 100%; */
+    /* background-image: url("./ordi_php.jpg"); */
+    background: url("./ordi_php.jpg") center/cover no-repeat;
+    border-radius: 10px;
+
+
+    /* margin-block-end: 16px; */
+}
+.carte__info{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.info__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* pseudo-class , gere le style au survole */
+.carte__container:hover{
+    background-color: #DFDFDF;
+    transform: translateY(-10px);
+
+}
