@@ -341,3 +341,116 @@ const pokemons = [
   
   //todo Utiliser la meme méthode pour les type Vol, et psy
 
+
+
+
+  //******************* Find
+//? La méthode find() renvoie la première valeur qui satisfait la condition donnée dans la fonction.
+
+const numbers = [10, 20, 30, 40];
+
+// Trouver le premier nombre supérieur à 25
+const found = numbers.find(num => num > 25);
+console.log(found);  // Résultat : 30
+
+
+//******************* Filter
+//? La méthode find() renvoie la première valeur qui satisfait la condition donnée dans la fonction.La méthode filter() crée un nouveau tableau contenant tous les éléments qui passent une condition.
+const numbers1 = [10, 20, 30, 40];
+
+// Filtrer tous les nombres supérieurs à 25
+const filtered = numbers1.filter(num => num > 25);
+console.log(filtered);  // Résultat : [30, 40]
+
+//******************* Map
+//?La méthode map() crée un nouveau tableau avec les résultats d'une fonction appliquée à chaque élément.
+
+const numbers2 = [10, 20, 30];
+
+// Multiplier chaque nombre par 2
+const doubled = numbers2.map(num => num * 2);
+console.log(doubled);  // Résultat : [20, 40, 60]
+
+
+//******************* forEach
+//? La méthode forEach() exécute une fonction sur chaque élément du tableau. Contrairement à map(), elle ne retourne rien.
+
+const numbers3 = [10, 20, 30];
+
+// Afficher chaque nombre
+numbers3.forEach(num => console.log(num));
+// Résultat : 10, 20, 30
+
+
+//******************* some
+//? La méthode some() vérifie si au moins un élément du tableau satisfait la condition donnée.
+
+const numbers4 = [10, 20, 30];
+
+// Vérifier s'il existe au moins un nombre supérieur à 25
+const hasLargeNumber = numbers4.some(num => num > 25);
+console.log(hasLargeNumber);  // Résultat : true
+
+
+//******************* Every
+//? La méthode every() vérifie si tous les éléments du tableau satisfont une condition.
+
+const numbers5 = [10, 20, 30];
+
+// Vérifier si tous les nombres sont supérieurs à 5
+const allAboveFive = numbers5.every(num => num > 5);
+console.log(allAboveFive);  // Résultat : true
+
+
+//******************* includes
+//? La méthode includes() vérifie si un tableau contient un certain élément.
+
+const numbers6 = [10, 20, 30];
+
+// Vérifier si le tableau contient le nombre 20
+const includesTwenty = numbers6.includes(20);
+console.log(includesTwenty);  // Résultat : true
+
+
+//******************* findIndex
+//? La méthode findIndex() renvoie l'indice du premier élément qui satisfait une condition. Si aucun élément ne correspond, elle renvoie -1.
+
+const numbers7 = [10, 20, 30];
+
+// Trouver l'indice du premier nombre supérieur à 15
+const index = numbers7.findIndex(num => num > 15);
+console.log(index);  // Résultat : 1 (car 20 est à l'index 1)
+
+
+//******************* fill
+//? La méthode fill() remplit les éléments d'un tableau avec une valeur statique.
+const numbers8 = [1, 2, 3, 4];
+
+// Remplir tout le tableau avec 0
+const filled = numbers8.fill(0);
+console.log(filled);  // Résultat : [0, 0, 0, 0]
+
+// Remplir une partie du tableau (de l'index 1 à 2)
+const partiallyFilled = [1, 2, 3, 4].fill(0, 1, 3);
+console.log(partiallyFilled);  // Résultat : [1, 0, 0, 4]
+
+array.fill('valeur de remplacement','index start', 'index end (exclu)')
+
+//******************* Array.of
+//?La méthode Array.of() crée un nouveau tableau à partir des éléments passés en argument.
+
+
+const arr = Array.of(1, 2, 3);
+console.log(arr);  // Résultat : [1, 2, 3]
+
+
+//******************* Array.from
+//? La méthode Array.from() crée un nouveau tableau à partir d'un objet semblable à un tableau ou d'un objet itérable (comme un objet arguments ou une chaîne de caractères).
+
+// Créer un tableau à partir d'une chaîne de caractères
+const strArray = Array.from('hello');
+console.log(strArray);  // Résultat : ['h', 'e', 'l', 'l', 'o']
+
+// Transformer un tableau-like (HTMLCollection par exemple) en vrai tableau
+const numbers9 = Array.from([1, 2, 3]);
+console.log(numbers9);  // Résultat : [1, 2, 3]

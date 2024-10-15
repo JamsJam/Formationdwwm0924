@@ -3,40 +3,38 @@
 
 //un objet se compose de proprités et de méthode
 let mark = {
-    //les proprieté
+    //! les proprieté
     prenom: "mark",
     nom: "zuckerberg",
     email: "mark@facebook.fr",
 
-    //les méthodes
-    sePresenter: ()=>{
+    //! les méthodes
+    sePresenter: function(){
         console.log('Bonjours')// bonjour
-        console.log("Bonjours, je m'appelle "+ this.prenom )// this va etre remplacer par le nom de l'objet dans lequel on est actuellement
+        console.log("Bonjours, je m'appelle "+ this.nom )// this va etre remplacer par le nom de l'objet dans lequel on est actuellement
     }
 }
-
 
 
 
 
 // On peux passer par une fonction pour creer un objet
 
-
-function getCoordonner(long, lat){
-    return{
+function getCoordonnees(long, lat){
+    return {
         longitude: long,
         latitude: lat
     }
 }
 
-let coordonnees = getCoordonner(54, 124)
+let coordonnees = getCoordonnees(54, 124)
 
 console.log(coordonnees) 
 /*
-    coordonnees{
-        longitude: 54,
-        latitude: 124
-    }
+*    coordonnees{
+*        longitude: 54,
+*        latitude: 124
+*    }
  */
 
 // pour appeler les propriété : 
@@ -57,18 +55,22 @@ function Utilisateur(prenom,nom,email) {
     this.nom = nom;
     this.email = email;
 
-    this.sePresenter = () => {
+    this.sePresenter = function(){
         console.log("Bonjour, je m'appelle " + this.nom +" "+ this.prenom+" et je suis joingnable a "+ this.email+". ")
     } 
 
 }
 
 // on cree un objet
-// on utilise ici un var pour ne pas que la valeur de mark se fasse ecraser
-var markz = new Utilisateur("mark", "zuckerberg","mark@facebook.com");
-console.log(markz)
 
-mark.sePresenter()
+let markz = new Utilisateur("mark", "zuckerberg","mark@facebook.com");
+let user23543 = new Utilisateur("jeremy", "antoine","jeremy@antoine.com");
+
+console.log(markz)
+console.log(user23543)
+
+
+markz.sePresenter()
 
 
 function Logement(type,annee, placeDeParking, proprietaire) {
@@ -78,6 +80,6 @@ function Logement(type,annee, placeDeParking, proprietaire) {
     this.proprietaire        =  proprietaire
 }
 
-var appartA = new Logement('appartement', 2014, true, mark)
+let appartA = new Logement('appartement', 2014, true, mark)
 
 console.log(appartA)
