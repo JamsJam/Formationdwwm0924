@@ -4,10 +4,10 @@
 
 On va mettre dans la page catalogue : 
 - un header avec un H1 qui dis " Annuaire Pokémon"
-- Une section recherche avec un input text et un bouton recherche
+
 - Une section catalogue avec une liste des pokemon présenté 20 par 20 et des bouton "suivant" et "precedent" pour afficher les pokémon suivant ou précédents
 
-QChaque pokemon dois avoir un bouton "Plus d'info" associé.
+Chaque pokemon doit avoir un bouton "Plus d'info" associé.
 En cliquand dessus on ouvre une fenetre modal qui affiche :
 - le nom
 - le type
