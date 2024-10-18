@@ -1,0 +1,25 @@
+.container{
+    width: 100vw;
+
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 20vw));
+
+}
+
+
+.carte{
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 200px;
+    padding: 1rem;
+}
+
+.carte img{
+    height: 150px;
+}
